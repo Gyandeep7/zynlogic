@@ -63,11 +63,19 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors from the Figma design
-				softBlue: '#6163FF',
-				darkBlue: '#1E1F5A',
-				softGray: '#F4F5F8',
-				darkGray: '#2C2C2C',
+				// Custom colors matching the design
+				purple: {
+					50: '#F5F3FF',
+					100: '#EDE9FE',
+					200: '#DDD6FE',
+					300: '#C4B5FD',
+					400: '#A78BFA',
+					500: '#8B5CF6',
+					600: '#7C3AED',
+					700: '#6D28D9',
+					800: '#5B21B6',
+					900: '#4C1D95',
+				},
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
