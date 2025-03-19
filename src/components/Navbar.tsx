@@ -1,21 +1,16 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
-
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  return (
-    <nav className="bg-white py-4 sticky top-0 z-50 shadow-sm">
+  return <nav className="bg-white py-4 sticky top-0 z-50 shadow-sm">
       <div className="container-custom flex justify-between items-center">
         <div className="flex items-center">
           <a href="/" className="text-2xl font-bold text-purple-600">
-            Soft<span className="text-gray-800">House</span>
+            Soft<span className="text-gray-800"></span>
           </a>
         </div>
 
@@ -38,8 +33,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white py-4 px-6 absolute top-16 left-0 right-0 shadow-md animate-fade-in">
+      {isMenuOpen && <div className="md:hidden bg-white py-4 px-6 absolute top-16 left-0 right-0 shadow-md animate-fade-in">
           <div className="flex flex-col space-y-4">
             <a href="#home" className="text-gray-700 hover:text-purple-600 transition-colors" onClick={toggleMenu}>Home</a>
             <a href="#services" className="text-gray-700 hover:text-purple-600 transition-colors" onClick={toggleMenu}>Services</a>
@@ -48,10 +42,7 @@ const Navbar = () => {
             <a href="#contact" className="text-gray-700 hover:text-purple-600 transition-colors" onClick={toggleMenu}>Contact</a>
             <Button className="bg-purple-600 hover:bg-purple-700 text-white w-full">Get Started</Button>
           </div>
-        </div>
-      )}
-    </nav>
-  );
+        </div>}
+    </nav>;
 };
-
 export default Navbar;
