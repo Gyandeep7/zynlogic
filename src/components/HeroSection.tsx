@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-
 const HeroSection = () => {
-  return (
-    <section id="home" className="py-20 md:py-28 bg-white">
+  return <section id="home" className="py-20 md:py-28 bg-white">
       <div className="container-custom grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div className="space-y-6">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
@@ -25,24 +22,16 @@ const HeroSection = () => {
           </div>
           <div className="flex items-center gap-1 pt-4">
             <div className="flex -space-x-2">
-              {[1, 2, 3, 4].map((_, i) => (
-                <div key={i} className="w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden">
-                </div>
-              ))}
+              {[1, 2, 3, 4].map((_, i) => <div key={i} className="w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden">
+                </div>)}
             </div>
             <span className="ml-4 text-sm font-medium">Trusted by <span className="text-purple-600">500+</span> companies</span>
           </div>
         </div>
         <div className="relative">
-          <img 
-            src="/lovable-uploads/d60ead2e-3d35-4c61-bc4e-5c2dd36248a8.png" 
-            alt="Software development workspace" 
-            className="rounded-lg shadow-xl mx-auto"
-          />
+          <img alt="Software development workspace" className="rounded-lg shadow-xl mx-auto" src="/lovable-uploads/93a74424-5852-483c-8d14-faee26ae29a8.jpg" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
