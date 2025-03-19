@@ -21,6 +21,18 @@ const apps = [
     description: 'Learn about user interface and experience design techniques.',
     images: ['https://images.unsplash.com/photo-1581089781785-603411fa81e5?ixlib=rb-4.0.3&auto=format&fit=crop&q=80'],
     color: 'bg-pink-100'
+  },
+  {
+    title: 'Medical Coding Solutions',
+    description: 'Streamline healthcare billing with advanced medical coding applications and tools.',
+    images: ['https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&q=80'],
+    color: 'bg-green-100'
+  },
+  {
+    title: 'Cybersecurity Platforms',
+    description: 'Protect your digital assets with enterprise-grade cybersecurity solutions and monitoring tools.',
+    images: ['https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&q=80'],
+    color: 'bg-blue-50'
   }
 ];
 
