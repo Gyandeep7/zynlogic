@@ -11,12 +11,14 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import FaqSection from '@/components/FaqSection';
 import ContactSection from '@/components/ContactSection';
 import FooterSection from '@/components/FooterSection';
+import MarqueeSection from '@/components/MarqueeSection';
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
       <HeroSection />
+      <MarqueeSection />
       <ServicesSection />
       <ClientsSection />
       <AboutSection />
