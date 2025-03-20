@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -20,11 +19,30 @@ const HeroSection = () => {
               Learn More
             </Button>
           </div>
-          <div className="flex items-center gap-1 pt-4">
-            <div className="flex -space-x-2">
-              <img src="/lovable-uploads/18b33ea4-9155-46b1-b987-beec0c959fc8.png" alt="Trusted company clients" className="h-8" />
+          <div className="flex items-center gap-3 pt-4">
+            <div className="flex -space-x-3">
+              <img 
+                src="https://randomuser.me/api/portraits/men/1.jpg" 
+                alt="Profile 1" 
+                className="h-10 w-10 rounded-full border-2 border-white shadow-sm"
+              />
+              <img 
+                src="https://randomuser.me/api/portraits/women/2.jpg" 
+                alt="Profile 2" 
+                className="h-10 w-10 rounded-full border-2 border-white shadow-sm"
+              />
+              <img 
+                src="https://randomuser.me/api/portraits/men/3.jpg" 
+                alt="Profile 3" 
+                className="h-10 w-10 rounded-full border-2 border-white shadow-sm"
+              />
+              <img 
+                src="https://randomuser.me/api/portraits/women/4.jpg" 
+                alt="Profile 4" 
+                className="h-10 w-10 rounded-full border-2 border-white shadow-sm"
+              />
             </div>
-            <span className="ml-1 text-sm font-medium">Trusted by <span className="text-purple-600">500+</span> companies</span>
+            <span className="text-sm font-medium">Trusted by <span className="text-purple-600">500+</span> companies</span>
           </div>
         </div>
         <div className="relative">
