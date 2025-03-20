@@ -5,34 +5,45 @@ import { ArrowRight } from 'lucide-react';
 
 const apps = [
   {
-    title: 'Mobile App Design Trends',
-    description: 'Discover the latest design trends in mobile application development.',
-    images: ['https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&q=80'],
-    color: 'bg-purple-100'
+    title: 'Mobile App Design',
+    description: 'Discover the latest design innovations in mobile application development.',
+    images: [
+      'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&q=80',
+      '/lovable-uploads/b2eb07dd-ad47-4db9-a07c-40fd095ed49c.png'
+    ],
+    color: 'bg-purple-100',
+    link: '#portfolio'
   },
   {
-    title: 'Web App Design Trends',
+    title: 'Web App Design',
     description: 'Explore modern web application design patterns and best practices.',
-    images: ['https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&q=80'],
-    color: 'bg-blue-100'
+    images: [
+      '/lovable-uploads/a8b66913-f852-4c05-afb7-cb2a57a13007.png',
+      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&q=80'
+    ],
+    color: 'bg-blue-100',
+    link: '#portfolio'
   },
   {
-    title: 'UI/UX Design Trends',
+    title: 'UI/UX Design',
     description: 'Learn about user interface and experience design techniques.',
     images: ['https://images.unsplash.com/photo-1581089781785-603411fa81e5?ixlib=rb-4.0.3&auto=format&fit=crop&q=80'],
-    color: 'bg-pink-100'
+    color: 'bg-pink-100',
+    link: '#portfolio'
   },
   {
     title: 'Medical Coding Solutions',
     description: 'Streamline healthcare billing with advanced medical coding applications and tools.',
     images: ['https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&q=80'],
-    color: 'bg-green-100'
+    color: 'bg-green-100',
+    link: '#portfolio'
   },
   {
     title: 'Cybersecurity Platforms',
     description: 'Protect your digital assets with enterprise-grade cybersecurity solutions and monitoring tools.',
     images: ['https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&q=80'],
-    color: 'bg-blue-50'
+    color: 'bg-blue-50',
+    link: '#portfolio'
   }
 ];
 
@@ -46,8 +57,10 @@ const AppShowcaseSection = () => {
               <div className="space-y-4 order-2 md:order-1">
                 <h3 className="text-2xl md:text-3xl font-bold">{app.title}</h3>
                 <p className="text-gray-700">{app.description}</p>
-                <Button variant="outline" className="border-purple-600 text-purple-600 hover:bg-purple-50">
-                  Learn more <ArrowRight className="ml-2 h-4 w-4" />
+                <Button variant="outline" className="border-purple-600 text-purple-600 hover:bg-purple-50" asChild>
+                  <a href={app.link}>
+                    Learn more <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
                 </Button>
               </div>
               <div className="flex justify-center order-1 md:order-2">
