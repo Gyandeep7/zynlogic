@@ -6,31 +6,31 @@ const apps = [
   {
     title: 'Mobile App Design Trends',
     description: 'Discover the latest design trends in mobile application development.',
-    images: ['/src/images/p1.jpg'],
+    images: ['/images/p1.jpg'],
     color: 'bg-purple-100'
   },
   {
     title: 'Web App Design Trends',
     description: 'Explore modern web application design patterns and best practices.',
-    images: ['/src/images/webapp.jpg'],
+    images: ['/images/webapp.jpg'],
     color: 'bg-blue-100'
   },
   {
     title: 'UI/UX Design Trends',
     description: 'Learn about user interface and experience design techniques.',
-    images: ['/src/images/uiuxl.png'],
+    images: ['/images/uiuxl.png'],
     color: 'bg-pink-100'
   },
   {
     title: 'Medical Coding Solutions',
     description: 'Streamline healthcare billing with advanced medical coding applications and tools.',
-    images: ['/src/images/medi2.png'],
+    images: ['/images/medi2.png'],
     color: 'bg-green-100'
   },
   {
     title: 'Cybersecurity Platforms',
     description: 'Protect your digital assets with enterprise-grade cybersecurity solutions and monitoring tools.',
-    images: ['/src/images/cyber.jpg'],
+    images: ['/images/cyber.jpg'],
     color: 'bg-blue-50'
   }
 ];

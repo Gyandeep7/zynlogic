@@ -10,25 +10,25 @@ import {
 
 const profiles = [
   {
-    image: "/src/images/profiles/david.png",
+    image: "/images/profiles/david.png",
     alt: "David",
     role: "CEO",
     company: "TechCorp Solutions"
   },
   {
-    image: "/src/images/profiles/sarah.png",
+    image: "/images/profiles/sarah.png",
     alt: "Sarah",
     role: "CTO",
     company: "InnovateX"
   },
   {
-    image: "/src/images/profiles/michael.png",
+    image: "/images/profiles/michael.png",
     alt: "Michael",
     role: "Director",
     company: "Digital Dynamics"
   },
   {
-    image: "/src/images/profiles/emily.png",
+    image: "/images/profiles/emily.png",
     alt: "Emily",
     role: "VP Engineering",
     company: "CloudTech Systems"

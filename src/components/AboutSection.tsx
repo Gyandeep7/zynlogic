@@ -17,7 +17,7 @@ const AboutSection = () => {
       <div className="container-custom grid md:grid-cols-2 gap-12 items-center">
         <div className="order-2 md:order-1">
           <img 
-            src="/src/images/aboutus.avif" 
+            src="/images/aboutus.avif" 
             alt="Our Team" 
             className="rounded-lg shadow-xl max-w-full h-auto"
           />
