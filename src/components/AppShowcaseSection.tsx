@@ -7,7 +7,7 @@ const apps = [
   {
     title: 'Mobile App Design',
     description: 'Discover the latest design trends in mobile application development.',
-    images: ['/lovable-uploads/84ed0c89-8bcf-4a04-b523-f3495d257191.png'],
+    images: ['/lovable-uploads/117b0de8-2d75-4caa-8ae6-487b1f538f9e.png'],
     color: 'bg-purple-100'
   },
   {
