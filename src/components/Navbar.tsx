@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="container-custom flex justify-between items-center">
         <div className="flex items-center">
           <a href="/" className="text-2xl font-bold text-purple-600">
-            Zynlogic<span className="text-gray-800">Technologies</span>
+            Soft<span className="text-gray-800">House</span>
           </a>
         </div>
 

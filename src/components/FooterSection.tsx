@@ -9,7 +9,7 @@ const FooterSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12">
           <div className="space-y-4">
             <h3 className="text-xl font-bold mb-4">
-              Zynlogic<span className="text-purple-400">Technologies</span>
+              Soft<span className="text-purple-400">House</span>
             </h3>
             <p className="text-gray-400">
               We build software solutions that solve real-world problems and drive business growth.
@@ -62,7 +62,7 @@ const FooterSection = () => {
         </div>
         
         <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-          <p>© {new Date().getFullYear()} Zynlogic Technologies. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} SoftHouse. All rights reserved.</p>
         </div>
       </div>
     </footer>
