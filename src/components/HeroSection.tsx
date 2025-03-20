@@ -5,8 +5,8 @@ const HeroSection = () => {
   return <section id="home" className="py-20 md:py-28 bg-white">
       <div className="container-custom grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div className="space-y-6">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            We Build <span className="text-purple-600">Software Solutions</span> That Solve Problems
+          <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight font-bold">
+            We Build <span className="text-purple-600"></span> That Solve Problems
           </h1>
           <p className="text-lg text-gray-600 max-w-xl">
             Our team of experts uses a methodology to identify the software solutions exactly aligned with your business needs.
