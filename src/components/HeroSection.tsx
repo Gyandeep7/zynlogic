@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+
 const HeroSection = () => {
   return <section id="home" className="py-20 md:py-28 bg-white">
       <div className="container-custom grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
@@ -20,10 +22,9 @@ const HeroSection = () => {
           </div>
           <div className="flex items-center gap-1 pt-4">
             <div className="flex -space-x-2">
-              {[1, 2, 3, 4].map((_, i) => <div key={i} className="w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden">
-                </div>)}
+              <img src="/lovable-uploads/18b33ea4-9155-46b1-b987-beec0c959fc8.png" alt="Trusted company clients" className="h-8" />
             </div>
-            <span className="ml-4 text-sm font-medium">Trusted by <span className="text-purple-600">500+</span> companies</span>
+            <span className="ml-1 text-sm font-medium">Trusted by <span className="text-purple-600">500+</span> companies</span>
           </div>
         </div>
         <div className="relative">
@@ -32,4 +33,5 @@ const HeroSection = () => {
       </div>
     </section>;
 };
+
 export default HeroSection;
