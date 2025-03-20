@@ -1,12 +1,14 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+
 const HeroSection = () => {
   return <section id="home" className="py-20 md:py-28 bg-white">
       <div className="container-custom grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div className="space-y-6">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            We Build <span className="text-purple-600">Software Solutions</span> That Solve Problems
+            Transforming Ideas into <span className="text-purple-600">Powerful Software</span>
           </h1>
           <p className="text-lg text-gray-600 max-w-xl">
             Our team of experts uses a methodology to identify the software solutions exactly aligned with your business needs.
@@ -29,9 +31,10 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="relative">
-          <img alt="Software development workspace" className="rounded-lg shadow-xl mx-auto" src="/lovable-uploads/93a74424-5852-483c-8d14-faee26ae29a8.jpg" />
+          <img alt="Software development workspace" className="rounded-lg shadow-xl mx-auto" src="/lovable-uploads/d4fae9d3-e3e5-405c-a427-edf636947cad.png" />
         </div>
       </div>
     </section>;
 };
+
 export default HeroSection;

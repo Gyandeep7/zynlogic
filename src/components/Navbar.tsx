@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="container-custom flex justify-between items-center">
         <div className="flex items-center">
           <a href="/" className="text-2xl font-bold text-purple-600">
-            Soft<span className="text-gray-800">House</span>
+            Zyn<span className="text-gray-800">logic</span>
           </a>
         </div>
 
