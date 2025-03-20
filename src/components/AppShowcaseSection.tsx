@@ -5,19 +5,19 @@ import { ArrowRight } from 'lucide-react';
 
 const apps = [
   {
-    title: 'Mobile App Design Trends',
+    title: 'Mobile App Design',
     description: 'Discover the latest design trends in mobile application development.',
-    images: ['https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&q=80'],
+    images: ['/lovable-uploads/84ed0c89-8bcf-4a04-b523-f3495d257191.png'],
     color: 'bg-purple-100'
   },
   {
-    title: 'Web App Design Trends',
+    title: 'Web App Design',
     description: 'Explore modern web application design patterns and best practices.',
-    images: ['https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&q=80'],
+    images: ['/lovable-uploads/323fe03e-cc5b-4f10-b842-4fe839f3f201.png'],
     color: 'bg-blue-100'
   },
   {
-    title: 'UI/UX Design Trends',
+    title: 'UI/UX Design',
     description: 'Learn about user interface and experience design techniques.',
     images: ['https://images.unsplash.com/photo-1581089781785-603411fa81e5?ixlib=rb-4.0.3&auto=format&fit=crop&q=80'],
     color: 'bg-pink-100'
