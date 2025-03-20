@@ -12,7 +12,6 @@ import FaqSection from '@/components/FaqSection';
 import ContactSection from '@/components/ContactSection';
 import FooterSection from '@/components/FooterSection';
 import MarqueeSection from '@/components/MarqueeSection';
-import CareerSection from '@/components/CareerSection';
 
 const Index = () => {
   return (
@@ -26,7 +25,6 @@ const Index = () => {
       <AppShowcaseSection />
       <TestimonialsSection />
       <PortfolioSection />
-      <CareerSection />
       <FaqSection />
       <ContactSection />
       <FooterSection />
