@@ -1,18 +1,14 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-
 const HeroSection = () => {
   return <section id="home" className="py-20 md:py-28 bg-white">
       <div className="container-custom grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div className="space-y-6">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight lg:text-4xl">
             Transforming Ideas into <span className="text-purple-600">Powerful Software</span>
           </h1>
-          <p className="text-lg text-gray-600 max-w-xl">
-            Our team of experts uses a methodology to identify the software solutions exactly aligned with your business needs.
-          </p>
+          <p className="text-lg text-gray-600 max-w-xl font-bold">Our team of experts craft tailored software solutions that perfectly fit your business needs.</p>
           <div className="flex gap-4 pt-4">
             <Button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-5 rounded-md text-base transition-all duration-300">
               Get Started
@@ -36,5 +32,4 @@ const HeroSection = () => {
       </div>
     </section>;
 };
-
 export default HeroSection;
