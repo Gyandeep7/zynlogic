@@ -66,22 +66,22 @@ const HeroSection = () => {
           <div className="flex items-center gap-4 pt-6">
             <div className="flex -space-x-2">
               <img 
-                src="/src/images/h1.jpeg" 
+                src="/images/h1.jpeg" 
                 alt="David" 
                 className="h-10 w-10 rounded-full border-2 border-white shadow-sm relative z-40 bg-white"
               />
               <img 
-                src="/src/images/h2.jpeg" 
+                src="/images/h2.jpeg" 
                 alt="Sarah" 
                 className="h-10 w-10 rounded-full border-2 border-white shadow-sm relative z-30 bg-white"
               />
               <img 
-                src="/src/images/h3.jpeg" 
+                src="/images/h3.jpeg" 
                 alt="Michael" 
                 className="h-10 w-10 rounded-full border-2 border-white shadow-sm relative z-20 bg-white"
               />
               <img 
-                src="/src/images/h4.jpeg" 
+                src="/images/h4.jpeg" 
                 alt="Emily" 
                 className="h-10 w-10 rounded-full border-2 border-white shadow-sm relative z-10 bg-white"
               />
