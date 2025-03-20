@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
@@ -8,6 +7,13 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+    }
   };
 
   return (
@@ -25,8 +31,13 @@ const Navbar = () => {
           <a href="#services" className="text-gray-700 hover:text-purple-600 transition-colors">Services</a>
           <a href="#about" className="text-gray-700 hover:text-purple-600 transition-colors">About</a>
           <a href="#portfolio" className="text-gray-700 hover:text-purple-600 transition-colors">Portfolio</a>
-          <a href="#contact" className="text-gray-700 hover:text-purple-600 transition-colors">Contact</a>
-          <Button className="bg-purple-600 hover:bg-purple-700 text-white">Get Started</Button>
+          {/* <a href="#contact" className="text-gray-700 hover:text-purple-600 transition-colors">Contact</a> */}
+          <Button 
+            className="bg-purple-600 hover:bg-purple-700 text-white"
+            onClick={scrollToContact}
+          >
+            Get Started
+          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -46,7 +57,12 @@ const Navbar = () => {
             <a href="#about" className="text-gray-700 hover:text-purple-600 transition-colors" onClick={toggleMenu}>About</a>
             <a href="#portfolio" className="text-gray-700 hover:text-purple-600 transition-colors" onClick={toggleMenu}>Portfolio</a>
             <a href="#contact" className="text-gray-700 hover:text-purple-600 transition-colors" onClick={toggleMenu}>Contact</a>
-            <Button className="bg-purple-600 hover:bg-purple-700 text-white w-full">Get Started</Button>
+            <Button 
+              className="bg-purple-600 hover:bg-purple-700 text-white w-full"
+              onClick={scrollToContact}
+            >
+              Get Started
+            </Button>
           </div>
         </div>
       )}

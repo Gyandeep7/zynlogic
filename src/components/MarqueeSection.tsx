@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Marquee } from '@/components/ui/marquee';
 
@@ -91,8 +90,8 @@ const MarqueeSection = () => {
   const arr = [Logos.tailwindcss, Logos.framer, Logos.nextjs, Logos.aws];
 
   return (
-    <div className="container-custom mb-10">
-      <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">Trusted by Industry Leaders</h2>
+    <div className="container-custom mb-6">
+      <h2 className="text-2xl font-bold text-center mb-4 text-gray-800">Trusted by Industry Leaders</h2>
       <Marquee>
         {arr.map((Logo, index) => (
           <div

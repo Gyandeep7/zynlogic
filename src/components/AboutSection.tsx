@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Check } from 'lucide-react';
@@ -18,7 +17,7 @@ const AboutSection = () => {
       <div className="container-custom grid md:grid-cols-2 gap-12 items-center">
         <div className="order-2 md:order-1">
           <img 
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" 
+            src="/src/images/aboutus.avif" 
             alt="Our Team" 
             className="rounded-lg shadow-xl max-w-full h-auto"
           />

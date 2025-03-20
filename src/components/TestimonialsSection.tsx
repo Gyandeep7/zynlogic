@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Star } from 'lucide-react';
@@ -9,7 +8,7 @@ const testimonials = [
     content: "Working with SoftHouse transformed our business. Their expertise in software development helped us streamline operations and improve customer experience.",
     author: "Sarah Johnson",
     position: "CEO, TechCorp",
-    avatar: "https://randomuser.me/api/portraits/women/1.jpg",
+    avatar: "/src/images/sara.jpeg",
     rating: 5
   },
   {
@@ -17,7 +16,7 @@ const testimonials = [
     content: "The team at SoftHouse delivered our project on time and exceeded our expectations. Their communication and technical skills are outstanding.",
     author: "Michael Chen",
     position: "CTO, MobiConnect",
-    avatar: "https://randomuser.me/api/portraits/men/2.jpg",
+    avatar: "/src/images/Micheal.jpeg",
     rating: 5
   },
   {
@@ -25,7 +24,7 @@ const testimonials = [
     content: "We've been working with SoftHouse for over 3 years now, and they've consistently delivered high-quality solutions for our complex requirements.",
     author: "Emily Rodriguez",
     position: "Product Manager, CloudSys",
-    avatar: "https://randomuser.me/api/portraits/women/3.jpg",
+    avatar: "/src/images/Emily.jpeg",
     rating: 5
   },
 ];

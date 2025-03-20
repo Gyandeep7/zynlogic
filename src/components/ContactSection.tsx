@@ -15,13 +15,13 @@ const contactMethods = [
   {
     icon: <Mail className="h-5 w-5 text-purple-600" />,
     title: 'Email us',
-    description: 'contact@softhouse.com',
+    description: 'hr@zynlogic.com',
     color: 'bg-blue-100'
   },
   {
     icon: <MapPin className="h-5 w-5 text-purple-600" />,
     title: 'Visit us',
-    description: '123 Tech Street, Silicon Valley, CA',
+    description: 'Trendz Aspire, Hitech City, Hyderabad, 500081',
     color: 'bg-green-100'
   }
 ];
