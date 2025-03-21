@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -40,7 +41,7 @@ const HeroSection = () => {
       <div className="container-custom grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div className="space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight lg:text-4xl">
-            Transforming Ideas into <span className="text-purple-600">Powerful Software</span>
+            Transforming Ideas into <span className="text-black">Zynlogic</span>
           </h1>
           <p className="text-lg text-gray-600 max-w-xl font-bold">Our team of experts craft tailored software solutions that perfectly fit your business needs.</p>
           <div className="flex gap-4 pt-4">
