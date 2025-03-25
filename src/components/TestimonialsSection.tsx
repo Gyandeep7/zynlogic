@@ -5,26 +5,26 @@ import { Star } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    content: "Working with SoftHouse transformed our business. Their expertise in software development helped us streamline operations and improve customer experience.",
+    content: "Working with Zynlogic transformed our business. Their expertise in software development helped us streamline operations and improve customer experience.",
     author: "Sarah Johnson",
     position: "CEO, TechCorp",
-    avatar: "/src/images/sara.jpeg",
+    avatar: "/src/images/sara.png",
     rating: 5
   },
   {
     id: 2,
-    content: "The team at SoftHouse delivered our project on time and exceeded our expectations. Their communication and technical skills are outstanding.",
+    content: "The team at Zynlogic delivered our project on time and exceeded our expectations. Their communication and technical skills are outstanding.",
     author: "Michael Chen",
     position: "CTO, MobiConnect",
-    avatar: "/src/images/Micheal.jpeg",
+    avatar: "/src/images/Micheal.png",
     rating: 5
   },
   {
     id: 3,
-    content: "We've been working with SoftHouse for over 3 years now, and they've consistently delivered high-quality solutions for our complex requirements.",
+    content: "We've been working with Zynlogic for over 3 years now, and they've consistently delivered high-quality solutions for our complex requirements.",
     author: "Emily Rodriguez",
     position: "Product Manager, CloudSys",
-    avatar: "/src/images/Emily.jpeg",
+    avatar: "/src/images/Emily.png",
     rating: 5
   },
 ];

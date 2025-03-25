@@ -1,4 +1,3 @@
-
 import {
   Accordion,
   AccordionContent,
@@ -129,7 +128,7 @@ const Faq3 = ({
           </p>
           <div className="flex w-full flex-col justify-center gap-2 sm:flex-row">
             <Button className="bg-purple-600 hover:bg-purple-700 text-white w-full sm:w-auto" asChild>
-              <a href={supportButtonUrl} target="_blank">
+              <a href={supportButtonUrl}>
                 {supportButtonText}
               </a>
             </Button>

@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Mail, MapPin, Phone } from 'lucide-react';
+import { useForm, ValidationError } from '@formspree/react';
 
 const contactMethods = [
   {
@@ -27,6 +27,23 @@ const contactMethods = [
 ];
 
 const ContactSection = () => {
+  const [state, handleSubmit] = useForm("mblggngw");
+
+  if (state.succeeded) {
+    return (
+      <section id="contact" className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="text-center max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Thank You!</h2>
+            <p className="text-gray-600">
+              We have received your message and will get back to you soon.
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section id="contact" className="section-padding bg-white">
       <div className="container-custom">
@@ -61,30 +78,66 @@ const ContactSection = () => {
               </p>
             </div>
             
-            <form className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="name" className="block mb-2 text-sm font-medium">Name</label>
-                  <Input id="name" placeholder="Your name" />
+                  <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-700">Name</label>
+                  <Input 
+                    id="name" 
+                    name="name"
+                    type="text"
+                    required
+                    placeholder="Your name"
+                    className="w-full p-2.5 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <ValidationError prefix="Name" field="name" errors={state.errors} className="text-red-500 text-sm mt-1" />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block mb-2 text-sm font-medium">Email</label>
-                  <Input id="email" type="email" placeholder="Your email" />
+                  <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-700">Email</label>
+                  <Input 
+                    id="email" 
+                    name="email"
+                    type="email" 
+                    required
+                    placeholder="Your email"
+                    className="w-full p-2.5 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <ValidationError prefix="Email" field="email" errors={state.errors} className="text-red-500 text-sm mt-1" />
                 </div>
               </div>
               
               <div>
-                <label htmlFor="subject" className="block mb-2 text-sm font-medium">Subject</label>
-                <Input id="subject" placeholder="How can we help?" />
+                <label htmlFor="phoneno" className="block mb-2 text-sm font-medium text-gray-700">Phone No</label>
+                <Input 
+                  id="phoneno" 
+                  name="phoneno"
+                  type="number" 
+                  required
+                  placeholder="Your phone number"
+                  className="w-full p-2.5 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                />
+                <ValidationError prefix="Phone" field="phoneno" errors={state.errors} className="text-red-500 text-sm mt-1" />
               </div>
               
               <div>
-                <label htmlFor="message" className="block mb-2 text-sm font-medium">Message</label>
-                <Textarea id="message" placeholder="Tell us about your project" rows={4} />
+                <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-700">Message</label>
+                <Textarea 
+                  id="message" 
+                  name="message"
+                  required
+                  placeholder="Tell us about your project" 
+                  rows={5}
+                  className="w-full p-2.5 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-y"
+                />
+                <ValidationError prefix="Message" field="message" errors={state.errors} className="text-red-500 text-sm mt-1" />
               </div>
               
-              <Button className="bg-purple-600 hover:bg-purple-700 text-white w-full">
-                Send Message
+              <Button 
+                type="submit"
+                disabled={state.submitting}
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 px-4 rounded-md transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {state.submitting ? 'Sending...' : 'Send Message'}
               </Button>
             </form>
           </div>

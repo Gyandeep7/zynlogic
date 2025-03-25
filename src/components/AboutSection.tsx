@@ -43,9 +43,9 @@ const AboutSection = () => {
             ))}
           </div>
           
-          <Button className="btn-primary mt-4">
+          {/* <Button className="btn-primary mt-4">
             Learn More About Us
-          </Button>
+          </Button> */}
         </div>
       </div>
     </section>
